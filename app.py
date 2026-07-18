@@ -19,7 +19,7 @@ def load_models():
 @st.cache_data
 def load_all_datasets():
     # Load the master file
-    master_df = pd.read_csv('sp500_cleaned_master.csv')
+    master_df = pd.read_csv('sp500_dashboard_light.csv')
     
     # Fix column naming discrepancy (replace space with underscore)
     master_df = master_df.rename(columns={'Adj Close': 'Adj_Close'})
